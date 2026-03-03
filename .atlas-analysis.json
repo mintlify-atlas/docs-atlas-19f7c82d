@@ -1,0 +1,131 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "Serverless Data Lake Framework (SDLF)",
+  "projectDescription": "Enterprise-grade, production-hardened serverless data lake framework on AWS with IaC automation and best practices",
+  "theme": "aspen",
+  "primaryColor": "#232F3E",
+  "lightColor": "#FF9900",
+  "darkColor": "#146EB4",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "prerequisites"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/constructs-overview",
+              "concepts/data-lake-layers",
+              "concepts/pipelines",
+              "concepts/data-mesh"
+            ]
+          },
+          {
+            "group": "Setup & Deployment",
+            "pages": [
+              "deployment/installation",
+              "deployment/devops-account",
+              "deployment/cross-account",
+              "deployment/validation",
+              "deployment/cleanup"
+            ]
+          },
+          {
+            "group": "Constructs",
+            "pages": [
+              "constructs/foundations",
+              "constructs/team",
+              "constructs/dataset",
+              "constructs/pipeline",
+              "constructs/stage-lambda",
+              "constructs/stage-glue",
+              "constructs/stage-dataquality",
+              "constructs/monitoring",
+              "constructs/cicd"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/transformations",
+              "guides/vpc-networking",
+              "guides/git-integration",
+              "guides/data-quality",
+              "guides/cost-optimization",
+              "guides/security"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/running-pipelines",
+              "operations/monitoring",
+              "operations/troubleshooting",
+              "operations/upgrades"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Python Library",
+            "pages": [
+              "api/overview",
+              "api/datalake-client",
+              "api/s3-interface",
+              "api/dynamo-interface",
+              "api/sqs-interface",
+              "api/kms-interface",
+              "api/states-interface"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Enterprise data lake foundation with S3 storage layers (raw, stage, analytics)",
+    "Event-driven serverless ETL pipelines with AWS Step Functions",
+    "GitOps-based CI/CD automation for infrastructure deployment",
+    "Modular constructs (foundations, teams, datasets, pipelines, stages)",
+    "AWS Lake Formation integration for data governance and permissions",
+    "Built-in monitoring with CloudTrail and S3 Storage Lens",
+    "Data quality validation with AWS Glue Data Quality",
+    "Support for centralized data lake and data mesh architectures",
+    "Python library for data lake interactions",
+    "VPC support for secure, private deployments"
+  ],
+  "publicApiSurface": [
+    "DataLakeClient",
+    "S3Interface",
+    "DynamoInterface",
+    "SQSInterface",
+    "KMSInterface",
+    "StatesInterface",
+    "sdlf-foundations construct",
+    "sdlf-team construct",
+    "sdlf-dataset construct",
+    "sdlf-pipeline construct",
+    "sdlf-stageA construct",
+    "sdlf-stageB construct",
+    "sdlf-stage-lambda construct",
+    "sdlf-stage-glue construct",
+    "sdlf-stage-dataquality construct",
+    "sdlf-monitoring construct",
+    "sdlf-cicd construct",
+    "deploy.sh script",
+    "deploy-role.sh script",
+    "deploy-cicd.sh script"
+  ]
+}
